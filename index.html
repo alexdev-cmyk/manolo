@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Password Modal -->
+    <div class="password-modal" id="passwordModal">
+        <div class="password-content">
+            <h2>Escribe la palabra secreta</h2>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Tu apodo...">
+            <button class="submit-btn" id="submitPassword">Entrar</button>
+        </div>
+    </div>
+    
+    <!-- Welcome Screen -->
+    <div class="welcome-screen" id="welcomeScreen">
+        <h1 class="welcome-message">Feliz Cumpleaños espero que te guste este pequeño regalo, espero hayas disfrutado el dia, ojala te guste.</h1>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container" id="mainContent" style="display: none;">
+        <div class="tabs">
+            <button class="tab active" data-tab="love-letter">
+                Carta para ti
+            </button>
+            <button class="tab" data-tab="music">
+                <span>🎵</span> Musica
+            </button>
+            <button class="tab" data-tab="notes">
+                <span>📝</span> Notas
+            </button>
+            <button class="tab" data-tab="gallery">
+                <span>🌷</span> Galleria
+            </button>
+        </div>
+        
+        <div class="content-area">
+            <!-- Love Letter Tab -->
+            <div class="tab-content active" id="love-letter">
+                <h2>MY SPECIAL FRIEND</h2>
+                <div class="letter" id="loveLetter">
+                    <div class="letter-header">
+                        <h3>Una carta para ti 🫶</h3>
+                        <span>👇 Click para abrir</span>
+                    </div>
+                    <div class="letter-content">
+                        <p>Hola Manolo</p>
+                        <p>Aunque estoy seguro que posiblemente recibiste mejores regalos este es uno que hice hoy para ti, sabes ya te felicite por whatsapp pero me gustaria decirte mas por medio de este pequeño regalo.</p><br>
+                        <p>Probablemente sea la ultima vez que te felcitare por mi problema aunque me hubiera gustado haber seguido hablandote mucho mas porque siento que eres una gran persona y un gran amigo y por eso hice este regalo, es inminente y estupido pensar en que todas las veces que me diste tu amistad yo era alguien inmaduro y siempre me aleje por cosas tontas, pero esta vez solo lo hice porque pense que no podria lidiar con pensar en que podria hacerte cosas malas por mi condición mental.</p><br>
+                        <p>Pense que si me iba antes era mejor pero es mas dificil y lo sera aun mas por mi problema aun asi creo que eres genial y algun dia tendras todo lo que quieres porque eres de esas personas que se proponen algo y lo consiguen porque eres muy especial y unico, espero que sigas siendo tu mismo esa muchosidad tuya es muy distintiva y realmente muy hermosa.</p><br>
+                        <p>Ojala te guste este pequeño regalo, perdoname por lo que haga cuando no te recuerde aun asi espero que disfrutaras tu dia, Manolo te quiero mucho.</p>
+                        <p>Ojala te guste mi regalo, hay un dibujo que hice de ti abajo puedes verlo y darle en descargar si quieres guardarlo, tambien esta en la galeria. La seccion de musica es mi mejor regalo hay discos personalizados porque son especiales como tu, y eleji las canciones porque las letras me recordaran a ti cuando ni yo mismo te recuerde, espero te gusten (aunque se que no escuchas tanta musica en ingles, disculpa)</p><br>
+                        <p>ATTE: Alex</p>
+                    </div>
+                </div>
+                <div class="letter" id="drawingLetter">
+                    <div class="letter-header">
+                        <h3>Tu dibujo</h3>
+                        <span>&#128071; Click para abrir</span>
+                    </div>
+                    <div class="letter-content drawing-content">
+                        <img src="photos/manolo2.jpg" alt="Dibujo de Manolo" class="drawing-image">
+                        <a href="photos/manolo2.jpg" download="Dibujo_Manolo.jpg" class="download-btn">
+                            Descargar dibujo
+                        </a>
+                    </div>
+                </div>
+            </div>
+<!-- Music Tab -->
+<div class="tab-content" id="music">
+    <h2>Canciones que me recuerdan a ti</h2>
+
+    <div class="song-list">
+
+        <div class="song">
+            <img class="portada" src="photos/dropdead.jpg">
+            <div class="song-info">
+                <h4>DROP DEAD</h4>
+                <p>by Olivia Rodrigo</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/olivia.png">
+             <audio class="audio">
+              <source src="music/drop dead.mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+        <div class="song">
+            <img class="portada" src="photos/stupidsong.jpg">
+            <div class="song-info">
+                <h4>STUPID SONG</h4>
+                <p>by Olivia Rodrigo</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/olivia.png">
+             <audio class="audio">
+              <source src="music/Olivia Rodrigo - stupid song (Lyric Video).mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+        <div class="song">
+            <img class="portada" src="photos/loversrock.jpeg">
+            <div class="song-info">
+                <h4>LOVERS ROCK</h4>
+                <p>by TV Girl</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/lover2.png">
+             <audio class="audio">
+              <source src="music/Lovers Rock.mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+        <div class="song">
+            <img class="portada" src="photos/iknewit.jpg">
+            <div class="song-info">
+                <h4>I KNEW IT I KNEW YOU</h4>
+                <p>by Taylor Swift</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/taylor.png">
+             <audio class="audio">
+              <source src="music/Taylor Swift - I Knew It, I Knew You (from Toy Story 5).mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+ <div class="song">
+            <img class="portada" src="photos/madsounds.jpg">
+            <div class="song-info">
+                <h4>MAD SOUNDS</h4>
+                <p>by Arctic Monkeys</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/disco.png">
+             <audio class="audio">
+              <source src="music/Mad Sounds.mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+         <div class="song">
+            <img class="portada" src="photos/kids.jpg">
+            <div class="song-info">
+                <h4>KIDS</h4>
+                <p>by Current Joys</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/disco.png">
+             <audio class="audio">
+              <source src="music/Kids.mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+         <div class="song">
+            <img class="portada" src="photos/selfless.jpg">
+            <div class="song-info">
+                <h4>SELFLESS</h4>
+                <p>by The Strokes</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/disco2.png">
+             <audio class="audio">
+              <source src="music/The Strokes - Selfless (Official Audio).mp3" type="audio/mpeg">
+             </audio>
+        </div>
+
+         <div class="song">
+            <img class="portada" src="photos/demoyolo.jpg">
+            <div class="song-info">
+                <h4>I'LL TRY ANYTHING ONCE</h4>
+                <p>by The Strokes</p>
+            </div>
+            <div class="controls">
+            <img class="buttons back" src="photos/b1.png">
+            <img class="button play-btn" src="photos/b3.png">
+            <img class="buttonp pause-btn" src="photos/b4.png">
+            <img class="buttons forward" src="photos/b2.png">
+            </div>
+            <img class="play disco" src="photos/disco3.png">
+             <audio class="audio">
+              <source src="music/The Strokes - I'll Try Anything Once (You Only Live Once demo) (Heart In a Cage B-side).mp3" type="audio/mpeg">
+             </audio>
+        </div>
+    </div>
+</div>
+            
+            <!-- Notes Tab -->
+            <div class="tab-content" id="notes">
+                <h2>Tus frases</h2>
+                <div class="note">
+                    <p>"Ya llega"</p>
+                </div>
+                <div class="note">
+                    <p>"Oh"</p>
+                </div>
+                <div class="note">
+                    <p>"So"</p>
+                </div>
+                <div class="note">
+                    <p>"ok?"</p>
+                </div>
+                <div class="note">
+                    <p>"JIJIJAJA"</p>
+                </div>
+            </div>
+            
+            <!-- Gallery Tab -->
+            <div class="tab-content" id="gallery">
+                <h2>Cosas que recuerdan a ti</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="photos/minecraft.jpg" alt="r1">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/musica.jpg" alt="r2">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/noche.jpg" alt="r3">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/lluvia.jpg" alt="r4">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/dibujo.jpg" alt="r5">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/manolo.jpg" alt="r6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Decorative elements -->
+    <div class="heart" style="top: 10%; left: 5%;">❤️</div>
+    <div class="heart" style="top: 20%; right: 10%;">❤️</div>
+    <div class="heart" style="bottom: 15%; left: 15%;">❤️</div>
+    <div class="teddy-bear" style="top: 30%; left: 10%;">🧸</div>
+    <div class="teddy-bear" style="bottom: 10%; right: 5%;">🧸</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
